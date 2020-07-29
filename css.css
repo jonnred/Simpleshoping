@@ -3,10 +3,55 @@
     margin: 0;
     font-family: sans-serif;
 }
-
+body{
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+}
+#logo{
+    flex-grow: 4;
+    position: relative;
+    margin-left: 100px;
+}
 .navigation {
     display: flex;
     margin-top: 5px;
-    justify-content: flex-end;
-    
+    justify-content: space-evenly;
+    flex-grow: 3;
+}
+.navigation a{
+    text-decoration: none;
+    color: #000;
+    flex-grow: 1;
+    display: flex;
+    cursor: pointer;
+}
+.navigation a:hover{
+    color:grey;
+}
+.nav-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+}
+.content , .products{
+    display: block;
+    height: 100vh;
+    background-color: khaki;
+}
+.products{
+    background-color: lavender;
+    margin: 0px 100px 0px 100px;
+    display: flex;
+}
+.productDesign{
+    display: flex;
+    flex-direction: column;
+    background-color: hotpink;
+}
+.productDesign img{
+    background-color: blue;
+}
+.productTitle{
+    font-size: 20px;
 }
